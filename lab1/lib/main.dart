@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
     // Use a MaterialApp as the skeleton
     // for the app.
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         // This is the theme of your application.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),

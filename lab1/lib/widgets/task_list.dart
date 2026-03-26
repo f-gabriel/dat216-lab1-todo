@@ -10,16 +10,25 @@ class TaskList extends StatelessWidget{
   Widget build(BuildContext context) {
 
     var taskHandler = context.watch<TaskHandler>();
-    var tasks = taskHandler.testTasks();
-    tasks[1].completed = true;
+    var tasks = taskHandler.activeTasks;
 
     return ListView(
       children: [
-        for(final task in tasks) 
+        for (final task in tasks) 
           ListTile(
-            leading: StatusIcon(task),
-            title: Text(task.title)),
-      ]
-    ); 
-  }
+          leading: StatusIcon(task),
+          title: Text(task.title),
+          onTap: (){
+            taskHandler.toggleTask(task);
+        },
+        trailing: IconButton(
+          icon: Icon(Icons.delete),
+          onPressed: (){
+            taskHandler.deleteTask(task);
+            },
+          ), // IconButton
+        ), // ListTitle
+      ] // children
+    ); // ListView
+  } // build
 }
