@@ -48,13 +48,11 @@ class MainView extends StatelessWidget {
       },
       itemBuilder: (BuildContext context) => [
         const PopupMenuItem<FilterType>(
-          value: FilterType.all, 
-          child: Text('all')),
-          
+          value: FilterType.all, child: Text('All')),
         const PopupMenuItem<FilterType>(
-          value: FilterType.all, child: Text('Done')),
+          value: FilterType.done, child: Text('Done')),
         const PopupMenuItem<FilterType>(
-          value: FilterType.all, child: Text('Undone')),
+          value: FilterType.undone, child: Text('Undone')),
       ], 
     );
   }
