@@ -15,3 +15,14 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+
+
+
+Att göra: 
+- under add view, 
+    - gör så att Enter lägger till objektet
+    - Backspace ska ta en tillbaka utan att lägga till ett objekt
+    - se till att man inte kan lägga till en tom todo
+
