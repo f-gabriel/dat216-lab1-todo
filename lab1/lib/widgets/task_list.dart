@@ -31,8 +31,8 @@ class TaskList extends StatelessWidget{
                 taskHandler.deleteTask(task);
               },
             )
-                    ),
-          ), // IconButton // ListTitle
+          ),
+        ), // IconButton // ListTitle
       ] // children
     ); // ListView
   } // build

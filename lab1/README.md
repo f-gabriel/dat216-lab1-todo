@@ -21,8 +21,10 @@ samples, guidance on mobile development, and a full API reference.
 
 
 Att göra: 
+- lägga till så att listan faktiskt sparas
 - under add view, 
-    - gör så att Enter lägger till objektet
-    - Backspace ska ta en tillbaka utan att lägga till ett objekt
+    - gör så att Enter lägger till objektet (klart)
     - se till att man inte kan lägga till en tom todo
+- under task list
+    - lägga till så att man kan swipe:a bort todo:s
 
